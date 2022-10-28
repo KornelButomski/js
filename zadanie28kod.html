@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=46><html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+function pudelko(cena_b,zawartosc_b,zakup_b)//początek konstruktora
+{
+this.cena=cena_b;
+this.zawartosc=zawartosc_b;
+this.zakup=zakup_b;
+}//koniec konstruktora
+pudelko.prototype.wypisz = function () //definicja metody
+{
+alert(this.cena + ' ' + this.zawartosc+ ' ' + this.zakup);
+};
+var paczka1 = new pudelko("39.99zl", "Komputery", "17 grudnia"); // nowy obiekt osoba1
+var paczka2 = new pudelko('59.89zl', 'Buty', '5 marca');
+var paczka3 = new pudelko('49.69zl', 'Ubrania', '8 marca');
+paczka1.wypisz();
+paczka2.wypisz();
+paczka3.wypisz();
+pudelko.prototype.pudelko_pokaz_butomski=function() {alert('Odbiorca: ' + this.odbiorca)}
+paczka1.odbiorca='Marek Dąbrowski';
+paczka2.odbiorca='Jan Dąbrowski';
+paczka3.odbiorca='Marcin Dąbrowski';
+paczka1.pudelko_pokaz_butomski();
+paczka2.pudelko_pokaz_butomski();
+paczka3.pudelko_pokaz_butomski();
+document.write("dostęp do właściwości"+"<br>");
+document.write("Pudelko jeden"+" "+paczka1.cena+" "+paczka1.zawartosc+" "+paczka1.zakup+" "+paczka1.odbiorca+"<br>");
+document.write("Pudelko dwa"+" "+paczka2.cena+" "+paczka2.zawartosc+" "+paczka2.zakup+" "+paczka2.odbiorca+"<br>");
+document.write("Pudelko trzy"+" "+paczka3.cena+" "+paczka3.zawartosc+" "+paczka3.zakup+" "+paczka3.odbiorca+"<br>");
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

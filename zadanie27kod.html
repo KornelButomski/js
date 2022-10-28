@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=28><html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+var pudelko = {
+cena: '49.99zl',
+zawartosc: 'zabawki',
+zakup: '15 listopada',
+pudelko_wyswietl_butomski: function ()
+{
+document.write(this.cena + ' ' + this.zawartosc)
+}
+}
+pudelko.pudelko_wyswietl_butomski();
+pudelko.odbiorca='Marek Dąbrowski';
+pudelko.pudelko_pokaz_butomski=function() {alert('Odbiorca: ' + this.odbiorca)}
+pudelko.pudelko_pokaz_butomski();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
