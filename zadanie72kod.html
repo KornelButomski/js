@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols=85 rows=36><!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var a_but = 5;
+var b_but = 20;
+var c_but = "*";
+for ( var i=1; i<=b_but; i++)
+{
+document.write("*");
+}
+document.write("<br>");
+for ( var i=1; i<=(b_but-2); i++)
+{
+c_but=c_but+"&nbsp&nbsp";
+}
+for ( var i=1; i<=a_but; i++)
+{
+document.write(c_but+"*<br>");
+}
+for ( var i=1; i<=b_but; i++)
+{
+document.write("*");
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html></textarea><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
